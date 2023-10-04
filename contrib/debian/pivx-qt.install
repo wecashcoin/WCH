@@ -1,0 +1,6 @@
+usr/local/bin/pivx-qt usr/bin
+share/pixmaps/wch32.xpm usr/share/pixmaps
+share/pixmaps/wch16.xpm usr/share/pixmaps
+share/pixmaps/wch128.png usr/share/pixmaps
+debian/pivx-qt.desktop usr/share/applications
+debian/pivx-qt.protocol usr/share/kde4/services/

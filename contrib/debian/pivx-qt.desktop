@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Name=WeCash
+Comment= WCH P2P Cryptocurrency
+Comment[fr]= WCH, monnaie virtuelle cryptographique pair à pair
+Comment[tr]= WCH, eşten eşe kriptografik sanal para birimi
+Exec=wch-qt %u
+Terminal=false
+Type=Application
+Icon=wch128
+MimeType=x-scheme-handler/pivx;
+Categories=Office;Finance;
+StartupWMClass=WeCash-qt
