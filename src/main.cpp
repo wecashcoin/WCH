@@ -3373,6 +3373,11 @@ bool CheckBlock(const CBlock& block, CValidationState& state, bool fCheckPOW, bo
                 mapRejectedBlocks.insert(std::make_pair(block.GetHash(), GetTime()));
                 return state.DoS(0, false, REJECT_INVALID, "bad-cb-payee", false, "Couldn't find masternode/budget payment");
             }
+
+            if (!IsDeveloperPaymentValid(block, nHeight)) {
+                mapRejectedBlocks.insert(std::make_pair(block.GetHash(), GetTime()));
+                return state.DoS(0, false, REJECT_INVALID, "bad-cb-payee", false, "Couldn't find developer payment");
+            }
         } else {
             LogPrintf("%s: Masternode/Budget payment checks skipped on sync\n", __func__);
         }
